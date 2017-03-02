@@ -10,6 +10,11 @@
                ng-model="vm.electedofficial.name" md-autofocus>
       </md-input-container>
       <md-input-container>
+        <label for="office">Office</label>
+        <input type="text" id="office"
+               ng-model="vm.electedofficial.office" md-autofocus>
+      </md-input-container>    
+      <md-input-container>
         <label for="term">Dates serviced</label>
         <input type="text" id="term"
              ng-model="vm.electedofficial.term">
@@ -20,6 +25,18 @@
               ng-model="vm.electedofficial.description">
         </textarea>
       </md-input-container>
+     <md-input-container>
+            <label for="state">State</label>
+            <textarea type="text" id="state"
+                  ng-model="vm.electedofficial.state">
+            </textarea>
+          </md-input-container>    
+      <md-input-container>
+            <label for="website">Website</label>
+            <textarea type="text" id="website"
+                  ng-model="vm.electedofficial.website">
+            </textarea>
+          </md-input-container>    
       <md-input-container>
         <label for="image">Image Link</label>
         <input type="text" id="image"

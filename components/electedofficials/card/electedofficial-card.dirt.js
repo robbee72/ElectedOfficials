@@ -15,7 +15,7 @@
         controller: electedofficialCardController,
         controllerAs: 'vm'
       }
-
+      
       function electedofficialCardController( $scope, $state, $mdDialog) {
 
         var vm = this;
@@ -51,7 +51,11 @@
               .hideDelay(3000)
           );
         }
-
+        $scope.items = [
+            {office: "President"},
+            {office: "Vice President"},
+            {office: 'former President'}
+        ];
       }
     });
 })();

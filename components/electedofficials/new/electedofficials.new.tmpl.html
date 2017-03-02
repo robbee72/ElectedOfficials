@@ -4,36 +4,69 @@
   </md-toolbar>
   <md-content layout-padding>
     <form>
-      <md-input-container>
-        <label for="name">Name</label>
-        <input type="text" id="name"
-               ng-model="vm.electedofficial.name" md-autofocus>>
-      </md-input-container>
-      <md-input-container>
-        <label for="term">Dates serviced</label>
-        <input type="text" id="term" 
-             ng-model="vm.electedofficial.term" >
-      </md-input-container>
-      <md-input-container>
-        <label for="description">Description</label>
-        <textarea type="text" id="description"
-              ng-model="vm.electedofficial.description">
-        </textarea>
-      </md-input-container>
-      <md-input-container>
-        <label for="image">Image Link</label>
-        <input type="text" id="image"
-              ng-model="vm.electedofficial.image">
-      </md-input-container>
-      <md-button ng-if="!vm.editing" ng-click="vm.saveElectedofficial(vm.electedofficial)" class="md-primary">
-        Save
-      </md-button>
-      <md-button ng-if="vm.editing" ng-click="vm.saveEdit()" class="md-primary">
-        Save Edit
-      </md-button>
-      <md-button ng-click="vm.closeSidebar()" class="md-warn">
-        Cancel
-      </md-button>
+        <md-input-container>
+            <label for="name">Name</label>
+            <input type="text" id="name"
+                   ng-model="vm.electedofficial.name" md-autofocus>
+          </md-input-container>
+          <md-input-container>
+                <label for="office">Office</label>
+                <input type="text" id="office"
+                       ng-model="vm.electedofficial.office" md-autofocus>
+          </md-input-container>
+          <md-input-container>
+            <label for="term">Dates serviced</label>
+            <input type="text" id="term"
+                 ng-model="vm.electedofficial.term" >
+          </md-input-container>
+          <md-input-container>
+            <label for="description">Description</label>
+            <textarea type="text" id="description"
+                  ng-model="vm.electedofficial.description">
+            </textarea>
+          </md-input-container>
+        
+         <md-input-container>
+            <label for="state">State</label>
+            <textarea type="text" id="state"
+                  ng-model="vm.electedofficial.state">
+            </textarea>
+          </md-input-container>    
+        
+<!--
+          <md-input-container>  
+            <label for="state"></label>  
+            <div ng-app="electedofficials" ng-controller="eostatesCtrl">
+            <md-select ng-model="selectedState" ng-options="x for x in states">
+                 <md-option value="" disabled selected>Choose a state</md-option>
+                <option value="state"></option>
+            </md-select>
+
+              </div>    
+          </md-input-container>
+-->
+          
+          <md-input-container>
+            <label for="website">Website</label>
+            <textarea type="text" id="website"
+                  ng-model="vm.electedofficial.website">
+            </textarea>
+          </md-input-container>
+
+          <md-input-container>
+            <label for="image">Image Link</label>
+            <input type="text" id="image"
+                  ng-model="vm.electedofficial.image">
+          </md-input-container>
+          <md-button ng-if="!vm.editing" ng-click="vm.saveElectedofficial(vm.electedofficial)" class="md-primary">
+            Save
+          </md-button>
+          <md-button ng-if="vm.editing" ng-click="vm.saveEdit()" class="md-primary">
+            Save Edit
+          </md-button>
+          <md-button ng-click="vm.closeSidebar()" class="md-warn">
+            Cancel
+          </md-button>
     </form>
   </md-content>
 </md-sidenav>

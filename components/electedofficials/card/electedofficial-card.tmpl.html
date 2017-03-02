@@ -1,22 +1,25 @@
 <md-card
   class="electedofficial" 
   ng-repeat="electedofficial in electedofficials | 
+            orderBy: '$office' | 
             filter: electedofficialsFilter | 
             filter: category" 
-            flex="30">
+            flex="20">
 
   <img ng-src="{{ electedofficial.image }}" class="md-avatar">
     <md-card-content>
       
         <div class="electedofficial-info" ng-show="!showContact">
           <h2 class="md-name">{{ electedofficial.name }}</h2>
+          <h4>{{ electedofficial.office }}</h4>
           <h5>{{ electedofficial.term | date }}</h5>
+          <h5>{{ electedofficial.state }}</h5>    
           <p>{{ electedofficial.description }}</p>
         </div>
 
     </md-card-content>  
       
-    <div class="electedofficial-contact" ng-if="showContact">
+    <div class="electedofficial-info" ng-if="showContact">
       <p>
         <md-icon class="mdi mdi-home"></md-icon> 
         {{ electedofficial.contact.website }}

@@ -4,7 +4,7 @@
 
   angular
     .module('electedofficials')
-    .controller('electedofficialsController', function($scope, $mdSidenav, $mdDialog, $state, $mdToast, electedofficialsFactory) {
+    .controller('electedofficialsController',  function($scope, $mdSidenav, $mdDialog, $state, $mdToast, electedofficialsFactory) {
 
       var vm = this;
 
@@ -46,7 +46,9 @@
 
         angular.forEach(electedofficials, function(ad) {
           angular.forEach(ad.categories, function(category) {
-            categories.push(category);
+              categories.push(category);
+              categories.splice(3)
+              ["U"]
           });
         });
 

@@ -1,5 +1,7 @@
+
+
 h2 {
-    padding-left: 25px;
+    padding-left: 15px;
     align-content: center;
     font-family: script;
 }
@@ -9,19 +11,19 @@ md-content {
 }
 
 md-toolbar {
-    height: 100px;
-    
+    height: 70px;
+
 }
 .md-ink-ripple  {
     font-size: 10px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    
+
 }
 
 .mdi-plus-circle {
     display: inline;
     color: red;
-    
+
 }
 
 md-input-container {
@@ -41,7 +43,7 @@ md-input-container {
 }
 layout-align {
     font-family: "Times New Roman", Times, serif;
-       
+
 }
 .mdi-magnify {
     display: inline;

@@ -13,6 +13,7 @@
       $urlRouterProvider.otherwise('/electedofficials');
 
       $stateProvider
+      
         .state('electedofficials', {
           url: '/electedofficials',
           templateUrl: 'components/electedofficials/electedofficials.tmpl.html',
@@ -21,7 +22,8 @@
         .state('electedofficials.new', {
           url: '/new',
           templateUrl: 'components/electedofficials/new/electedofficials.new.tmpl.html',
-          controller: 'newElectedofficialsController as vm'
+          controller: 'newElectedofficialsController as vm' 
+          
         })
         .state('electedofficials.edit', {
           url: '/:id/edit',

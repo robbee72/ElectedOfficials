@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+<div ng-app="electedofficials" ng-controller="eoofficesCtrl">
+
+<select ng-model="selectedOffice" ng-options="x for x in offices">
+     <option value="" disabled selected>Choose an Office</option>
+    <option value="office">Office</option>
+</select>
+
+</div>
+<script src="eooffices.ctrl.js">
+</script>
+    
+</body>
+</html>    

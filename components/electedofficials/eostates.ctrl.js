@@ -1,4 +1,5 @@
-var eostates = angular.module('electedofficials', []);
+var eostates = angular
+                .module('electedofficials', []);
         (function(electedofficials){
             'use strict';
 

@@ -4,7 +4,7 @@
 
   angular
     .module('electedofficials')
-    .controller('electedofficialsController',  function($scope, $mdSidenav, $mdDialog, $state, $mdToast, electedofficialsFactory) {
+    .controller('electedofficialsController', "eooffices",  function($scope, $mdSidenav, $mdDialog, $state, $mdToast, electedofficialsFactory) {
 
       var vm = this;
 
